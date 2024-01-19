@@ -3,6 +3,13 @@ let str = "LaunchCode";
 
 //1) Use string methods to remove the first three characters from the string and add them to the end.
 //Hint - define another variable to hold the new string or reassign the new string to str.
+newstr = str;
+//console.log(newstr);
+newstr = str.slice(3, 10);
+console.log(newstr);
+endstr = ['L', 'a', 'u'];
+newstr = newstr.concat(endstr.join(''));
+console.log(newstr);
 
 //Use a template literal to print the original and modified string in a descriptive phrase.
 
