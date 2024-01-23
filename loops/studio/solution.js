@@ -1,3 +1,35 @@
+//correct answer commented out below.
+
+// function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
+//   let pantry = [protein, grains, veggies, beverages, desserts];
+//   let meals = [];
+  
+//   for (let i = 0; i < numMeals; i++) {
+//     let meal = [];
+//     for (let j = 0; j < pantry.length; j++){
+//       meal.push(pantry[j][i])
+//     }
+//     meals.push(meal);
+//   }
+//   /// Part A <#1194076933303050241>: Write a ``for`` loop inside this function
+//   /// Code your solution for part A <#1194076933303050241> below this comment (and above the return statement) ... ///
+
+
+//   return meals;
+// }
+// [8:38 PM]
+// function askForNumber() {
+//   numMeals = input.question("How many meals would you like to make? ");
+  
+//   /// CODE YOUR SOLUTION TO PART B here ///
+//   //while (numMeals < 7 && numMeals < 0 && isNaN(numMeals))
+//   while (numMeals < 1 || numMeals > 6 || isNaN(numMeals)) {
+//     numMeals = Number(input.question("Please select a number from 1 to 6: "));
+//   }
+
+//   return numMeals;
+// }
+//END OF CORRECT ANSWER
 const input = require('readline-sync');
 
 // Part A: #1 Populate these arrays
