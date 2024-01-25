@@ -33,8 +33,8 @@ function makeRectangle(width, height) {
 function makeDownwardStairs(height) {
     let stairs = '';
     for (let i = 0; i < height; i++) {
-        stairs += makeLine(i + 1) + '\n';
+        stairs += makeLine(i+1) + '\n';
     };
-    return stairs;
+    return stairs.slice(0,-1);
   };
 //console.log(makeDownwardStairs(5));
