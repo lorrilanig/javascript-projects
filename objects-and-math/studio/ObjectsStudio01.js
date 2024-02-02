@@ -1,10 +1,39 @@
+//Revisit and randomize the array! -Phillip
+
 // Code your selectRandomEntry function here:
+let selectRandomEntry = (arr) => {
+  let index = Math.floor(Math.random()*arr.length);
+  return arr[index];
+}
 
 
 // Code your buildCrewArray function here:
 
+let buildCrewArray = (id, candidate) => {
+  let newCrew = [];
+  for (let j = 0; j < id.length; j++)
+  {
+    for (let i = 0; i = candidate.length; i++) {
+      if (candidate[i].astronautID === id[j]){
+        newCrew.push(candidate[j]);
+      }
+    }
+  }
+  return newCrew;
+}
+
 
 let idNumbers = [291, 414, 503, 599, 796, 890];
+let crewID = [];
+
+while (crewID.length < 3) {
+  let x = selectRandomEntry(idNumbers)
+  if (!crewID.includes(x)) {
+    crewID.push(x);
+  }
+}
+
+
 
 // Here are the candidates and the 'animals' array:
 let candidateA = {
@@ -53,3 +82,6 @@ let candidateF = {
 let animals = [candidateA,candidateB,candidateC,candidateD,candidateE,candidateF];
 
 // Code your template literal and console.log statements:
+let crew = buildCrewArray(idNumbers,animals);
+
+console.log(crew);
